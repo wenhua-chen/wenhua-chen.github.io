@@ -1,0 +1,40 @@
+{% if post.header.teaser %}
+{% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+{% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+{% assign title = post.title %}
+{% endif %}
+
+<article class="project-content">
+  <div class="project-image">
+    <a href="{{ post.url | relative_url }}">
+      <img src="{{ teaser | relative_url }}" alt="" />
+    </a>
+  </div>
+
+  <div class="card-content">
+    <h2><a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a></h2>
+    <p class="archive__item-excerpt" itemprop="description">{{ post.intro }}</p>
+
+    {% if post.info %}
+    {% assign info = site.data.project_info[post.info] %}
+    <section class="project-labels">
+      {% for label in info.keywords %}
+      <span class="label label-{{ label.color }}">{{ label.label }}</span>
+      {% endfor %}
+    </section>
+    <section class="project-links">
+      {% for link in info.links %}
+      <a href="{{ link.url }}" rel="nofollow noopener noreferrer me" {% if link.url contains 'http' %} itemprop="sameAs"
+        {% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="links">{{
+          link.label }}</span></a>
+      {% endfor %}
+    </section>
+    {% endif %}
+  </div>
+</article>

@@ -1,3 +1,19 @@
+<script type="text/javascript">
+  function show_content(content_id) {
+    button = document.getElementById(content_id);
+    content = document.getElementById(content_id + '_content');
+    if (content.style.display == "block") {
+      content.style.display = "none";
+      button.innerHTML = button.innerHTML.replace('△', '▽');
+      return false
+    } else {
+      content.style.display = "block";
+      button.innerHTML = button.innerHTML.replace('▽', '△');
+      return true
+    }
+  }
+</script>
+
 {% assign navigation = site.data.navigation[include.nav] %}
 
 <nav class="nav__list">
@@ -6,21 +22,36 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
     {% for nav in navigation %}
-      <li>
-        {% if nav.url %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
-        {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
-        {% endif %}
+    <li>
+      {% if nav.url %}
+      <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+      {% else %}
+      <span class="nav__sub-title">{{ nav.title }}</span>
+      {% endif %}
 
-        {% if nav.children != null %}
-        <ul>
-          {% for child in nav.children %}
-            <li><a href="{{ child.url | relative_url }}"{% if child.url == page.url %} class="active"{% endif %}>{{ child.title }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-      </li>
+      {% if nav.children != null %}
+      <ul>
+        {% for child in nav.children %}
+        <li>
+          {% capture content_id %}{{ child.title }}{% endcapture %}
+          <a id="{{ child.title }}" onclick="return show_content('{{ content_id }}')"
+            href="{{ child.url | relative_url }}" {% if child.url==page.url %} class="active" {% endif %}>{{
+            child.title }}</a>
+
+          {% if child.children != null %}
+          <ul id="{{ child.title | append: '_content' }}" class="child_content" style="display: none;">
+            {% for grandchild in child.children %}
+            <li><a href="{{ grandchild.url | relative_url }}" {% if grandchild.url==page.url %} class="active" {% endif
+                %}>{{
+                grandchild.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
     {% endfor %}
   </ul>
 </nav>
