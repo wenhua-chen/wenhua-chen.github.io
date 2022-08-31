@@ -1,7 +1,10 @@
-# main links
+
+# ========================================================================
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "项目"
+    url: /#projects
+  - title: "简历"
+    url: /简历
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +13,184 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# ========================================================================
+
+face_anti_spoof_ZH:
+  - title: 背景和目的
+    url: /projects/活体检测#背景和目的
+    children:
+      - title: "什么是活体检测"
+        url: /projects/活体检测#什么是活体检测
+      - title: "为什么需要自研活体检测"
+        url: /projects/活体检测#为什么需要自研活体检测
+
+  - title: 成果
+    url: /projects/活体检测#成果
+    children:
+      - title: "产品落地了吗, 效果怎么样"
+        url: /projects/活体检测#产品落地了吗-效果怎么样
+      - title: "产品有哪些奖项和成果"
+        url: /projects/活体检测#产品有哪些奖项和成果
+  
+  - title: 处理思路
+    url: /projects/活体检测#处理思路
+    children:
+      - title: "活体检测的处理流程是怎样的"
+        url: /projects/活体检测#活体检测的处理流程是怎样的
+      - title: "人脸质量、动作活体、静默活体检测是什么意思"
+        url: /projects/活体检测#人脸质量动作活体静默活体检测是什么意思
+      - title: "为什么静默活体要在后台的服务器上完成, 不能放到移动端"
+        url: /projects/活体检测#为什么静默活体要在后台的服务器上完成-不能放到移动端
+      - title: "为什么要分成三步, 不能一步完成"
+        url: /projects/活体检测#为什么要分成三步-不能一步完成
+  
+  - title: 遇到的挑战 - 服务器端
+    url: /projects/活体检测#遇到的挑战---服务器端
+    children:
+      - title: "🔥 怎么确定静默活体解决方案的 ▽"
+        url: /projects/活体检测#怎么确定静默活体解决方案的
+        children:
+          - title: "• 技术调研"
+            url: /projects/活体检测#技术调研
+          - title: "• 实验"
+            url: /projects/活体检测#实验
+      - title: "🔥 怎么优化结果 ▽"
+        url: /projects/活体检测#怎么优化结果
+        children:
+          - title: "• 从数据上优化"
+            url: /projects/活体检测#从数据上优化
+          - title: "• 投票机制"
+            url: /projects/活体检测#投票机制
+          - title: "• 引入第三方通道"
+            url: /projects/活体检测#引入第三方通道
+          - title: "• 最终结果"
+            url: /projects/活体检测#最终结果
+      - title: "怎么提高服务的稳定性"
+        url: /projects/活体检测#怎么提高服务的稳定性
+      - title: "怎么提高服务的并发能力"
+        url: /projects/活体检测#怎么提高服务的并发能力
+  
+  - title: 遇到的挑战 - 移动端
+    url: /projects/活体检测#遇到的挑战---移动端
+    children:
+      - title: "怎么确定动作活体解决方案的"
+        url: /projects/活体检测#怎么确定动作活体解决方案的
+      - title: "算法上有哪些创新"
+        url: /projects/活体检测#算法上有哪些创新
+      - title: "移动端的调用逻辑是怎样的"
+        url: /projects/活体检测#移动端的调用逻辑是怎样的
+      - title: "为什么调用逻辑要这样设计"
+        url: /projects/活体检测#为什么调用逻辑要这样设计
+      - title: "工程上做了哪些优化"
+        url: /projects/活体检测#工程上做了哪些优化
+  
+  - title: 备注
+    url: /projects/活体检测#备注
+
+# ========================================================================
+
+tracking_recognizing_ZH:
+  - title: 背景和目的
+    url: /projects/行人追踪和行为识别#背景和目的
+    children:
+      - title: "什么是行人追踪和行为识别"
+        url: /projects/行人追踪和行为识别#什么是行人追踪和行为识别
+      - title: "为什么需要多视角"
+        url: /projects/行人追踪和行为识别#为什么需要多视角
+      - title: "为什么要做行人追踪和行为识别"
+        url: /projects/行人追踪和行为识别#为什么要做行人追踪和行为识别
+
+  - title: 成果
+    url: /projects/行人追踪和行为识别#成果
+    children:
+      - title: "产品落地了吗, 效果怎么样"
+        url: /projects/行人追踪和行为识别#产品落地了吗-效果怎么样
+      - title: "产品有哪些奖项和成果"
+        url: /projects/行人追踪和行为识别#产品有哪些奖项和成果
+  
+  - title: 处理思路
+    url: /projects/行人追踪和行为识别#处理思路
+    children:
+      - title: "处理流程是怎样的"
+        url: /projects/行人追踪和行为识别#处理流程是怎样的
+      - title: "后台怎么做追踪和识别"
+        url: /projects/行人追踪和行为识别#后台怎么做追踪和识别
+  
+  - title: 遇到的挑战 - 算法开发
+    url: /projects/行人追踪和行为识别#遇到的挑战---算法开发
+    children:
+      - title: "如何做追踪"
+        url: /projects/行人追踪和行为识别#如何做追踪
+      - title: "如何提升追踪的准确率和效率"
+        url: /projects/行人追踪和行为识别#如何提升追踪的准确率和效率
+      - title: "哪些行为需要识别"
+        url: /projects/行人追踪和行为识别#哪些行为需要识别
+      - title: "如何做行为识别"
+        url: /projects/行人追踪和行为识别#如何做行为识别
+  
+  - title: 遇到的挑战 - 算法部署
+    url: /projects/行人追踪和行为识别#遇到的挑战---算法部署
+    children:
+      - title: "如何做到实时处理"
+        url: /projects/行人追踪和行为识别#如何做到实时处理
+      - title: "输入线程中不同视角的画面不同步怎么办"
+        url: /projects/行人追踪和行为识别#输入线程中不同视角的画面不同步怎么办
+      - title: "输出时如何实时传输视频流"
+        url: /projects/行人追踪和行为识别#输出时如何实时传输视频流
+  
+  - title: 备注
+    url: /projects/行人追踪和行为识别#备注
+
+# ========================================================================
+
+AI_assisted_diagnose_ZH:
+  - title: 背景和目的
+    url: /projects/AI辅助诊断#背景和目的
+    children:
+      - title: "什么是AI辅助医疗诊断"
+        url: /projects/AI辅助诊断#什么是ai辅助医疗诊断
+      - title: "为什么需要AI辅助诊断"
+        url: /projects/AI辅助诊断#为什么需要ai辅助诊断
+
+  - title: 处理流程和结果
+    url: /projects/AI辅助诊断#处理流程和结果
+    children:
+      - title: "软件展示"
+        url: /projects/AI辅助诊断#软件展示
+      - title: "测试结果"
+        url: /projects/AI辅助诊断#测试结果
+      - title: "处理流程是怎样的"
+        url: /projects/AI辅助诊断#处理流程是怎样的
+  
+  - title: 遇到的挑战 - 数据准备
+    url: /projects/AI辅助诊断#遇到的挑战---数据准备
+    children:
+      - title: "训练数据是怎么准备的"
+        url: /projects/AI辅助诊断#训练数据是怎么准备的
+      - title: "数据是怎么做预处理的"
+        url: /projects/AI辅助诊断#数据是怎么做预处理的
+  
+  - title: 遇到的挑战 - 算法开发
+    url: /projects/AI辅助诊断#遇到的挑战---算法开发
+    children:
+      - title: "脊柱侧弯是如何判断的"
+        url: /projects/AI辅助诊断#脊柱侧弯是如何判断的
+      - title: "肺结节是如何判断的"
+        url: /projects/AI辅助诊断#肺结节是如何判断的
+      - title: "肺结节判定时FasterRCNN本身会对推荐区域做二分类, 为什么还要单独训练分类模型"
+        url: /projects/AI辅助诊断#肺结节判定时fasterrcnn本身会对推荐区域做二分类-为什么还要单独训练分类模型
+  
+  - title: 备注
+    url: /projects/AI辅助诊断#备注
+    children:
+      - title: "可变形卷积(Deformable Convolutional Networks)"
+        url: /projects/AI辅助诊断#可变形卷积deformable-convolutional-networks
+      - title: "HRNet"
+        url: /projects/AI辅助诊断#hrnet
+      - title: "MobileNet"
+        url: /projects/AI辅助诊断#mobilenet
+      - title: "CascadeRCNN"
+        url: /projects/AI辅助诊断#cascadercnn
+
+# ========================================================================

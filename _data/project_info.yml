@@ -1,0 +1,65 @@
+
+# ========================================================================
+
+face_anti_spoof:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Code(Python/C++/Java)"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wenhua-chen/"
+  keywords:
+    - label: "专利"
+      color: "red"
+    - label: "最佳项目"
+      color: "yellow"
+    - label: "人脸关键点"
+      color: "green"
+    - label: "人脸反欺诈"
+      color: "green"
+
+# ========================================================================
+
+tracking_recognizing:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Code(Python/FFmpeg)"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wenhua-chen/"
+  keywords:
+    - label: "专利"
+      color: "red"
+    - label: "最佳项目"
+      color: "yellow"
+    - label: "目标追踪"
+      color: "green"
+    - label: "行为识别"
+      color: "green"
+
+# ========================================================================
+  
+AI_assisted_diagnose:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "https://github.com/wenhua-chen/"
+    - label: "Code(Python)"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wenhua-chen/"
+  keywords:
+    - label: "目标检测"
+      color: "green"
+    - label: "实例分割"
+      color: "green"
