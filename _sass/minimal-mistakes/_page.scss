@@ -6,6 +6,7 @@
   @include clearfix;
   margin-left: auto;
   margin-right: auto;
+  // padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -13,6 +14,7 @@
   max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
+  background-color: #fff;
 
   @include breakpoint($x-large) {
     max-width: $max-width;
@@ -27,7 +29,11 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
+}
+
+.initial-content {
+  background-color: #f1f3f3;
 }
 
 .initial-content,
@@ -49,9 +55,7 @@ body {
 
   .page__inner-wrap {
     float: left;
-    margin-top: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 1rem;
     width: 100%;
     clear: both;
 
@@ -62,10 +66,15 @@ body {
       float: left;
       margin-left: 0;
       margin-right: 0;
+      // margin-top: 1em;
       width: 100%;
       clear: both;
     }
   }
+}
+
+.page .news-item {
+  font-size: 0.75rem;
 }
 
 .page__title {
@@ -77,52 +86,70 @@ body {
     text-decoration: none;
   }
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-5;
+  line-height: $line-height-3;
 }
 
 .page__content {
+  font-size: 0.8rem;
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
   }
 
-	h1, h2, h3, h4, h5, h6 {
-		.header-link {
-			position: relative;
-			left: 0.5em;
-			opacity: 0;
-			font-size: 0.8em;
-			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
-			-moz-transition: opacity 0.2s ease-in-out 0.1s;
-			-o-transition: opacity 0.2s ease-in-out 0.1s;
-			transition: opacity 0.2s ease-in-out 0.1s;
-		}
+  h3 {
+    margin-top: 2em;
+    font-size: 1.2em;
+  }
 
-		&:hover .header-link {
-			opacity: 1;
-		}
-	}
-
-  p,
-  li,
-  dl {
+  h4 {
     font-size: 1em;
+  }
+
+  ul,
+  li {
+    margin-left: 0.5em;
+    padding-left: 0em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    .header-link {
+      position: relative;
+      left: 0.5em;
+      opacity: 0;
+      font-size: 0.8em;
+      -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+      -moz-transition: opacity 0.2s ease-in-out 0.1s;
+      -o-transition: opacity 0.2s ease-in-out 0.1s;
+      transition: opacity 0.2s ease-in-out 0.1s;
+    }
+
+    &:hover .header-link {
+      opacity: 1;
+    }
   }
 
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    font-size: 0.8em;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -139,7 +166,7 @@ body {
     }
   }
 
-  :not(pre) > code {
+  :not(pre)>code {
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
     font-size: 0.8em;
@@ -149,7 +176,8 @@ body {
     &::before,
     &::after {
       letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
+      content: "\00a0";
+      /* non-breaking space*/
     }
   }
 
@@ -170,7 +198,7 @@ body {
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
@@ -178,7 +206,7 @@ body {
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -187,8 +215,9 @@ body {
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
-    padding: 3em 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 3em;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,14 +227,15 @@ body {
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
 
+    @include breakpoint($x-large) {
+      max-width: $max-width;
+    }
+
     a {
       color: #fff;
     }
 
     .wrapper {
-      padding-left: 1em;
-      padding-right: 1em;
-
       @include breakpoint($x-large) {
         max-width: $x-large;
       }
@@ -220,14 +250,16 @@ body {
     }
 
     .page__lead {
-      max-width: $medium;
+      // max-width: $medium;
+      max-width: $x-large;
+      padding: 0.5em 0;
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-4;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: $type-size-3;
       }
     }
   }
@@ -370,7 +402,7 @@ body {
     border: 0;
   }
 
-  + .taxonomy__section {
+  +.taxonomy__section {
     margin-top: 2em;
   }
 }
@@ -447,6 +479,7 @@ body {
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,

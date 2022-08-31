@@ -29,9 +29,6 @@
 
     &.sticky {
       overflow-y: auto;
-      /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
-      */
       max-height: calc(100vh - #{$nav-height} - 2em);
     }
   }
@@ -40,7 +37,7 @@
     width: calc(#{$right-sidebar-width} - 1em);
   }
 
-  > * {
+  >* {
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -59,6 +56,7 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+    margin-top: 0.3rem;
   }
 
   img {
@@ -134,7 +132,7 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 140px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -172,6 +170,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
@@ -179,6 +178,7 @@
 
 .author__bio {
   margin: 0;
+  font-size: $type-size-5;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -193,6 +193,10 @@
   font-family: $sans-serif;
   z-index: 20;
   cursor: pointer;
+
+  .labels {
+    margin-left: 0.3em;
+  }
 
   li:last-child {
     a {
@@ -350,4 +354,3 @@
     margin-right: initial;
   }
 }
-

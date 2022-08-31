@@ -108,7 +108,7 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .task-list {
-  padding:0;
+  padding: 0;
 
   li {
     list-style-type: none;
@@ -204,6 +204,7 @@ body:hover .visually-hidden button {
 /* social icons*/
 
 .social-icons {
+
   .fas,
   .fab,
   .far,
@@ -379,6 +380,7 @@ body:hover .visually-hidden button {
     -webkit-transform: rotate3d(0, 0, 1, 45deg);
     transform: rotate3d(0, 0, 1, 45deg);
   }
+
   &:after {
     -webkit-transform: rotate3d(0, 0, 1, -45deg);
     transform: rotate3d(0, 0, 1, -45deg);
@@ -413,6 +415,7 @@ body:hover .visually-hidden button {
 }
 
 .greedy-nav__toggle:hover {
+
   .navicon,
   .navicon:before,
   .navicon:after {
@@ -437,9 +440,9 @@ body:hover .visually-hidden button {
     position: sticky;
     top: 2em;
 
-    > * {
-      display: block;
-    }
+    // > * {
+    //   display: block;
+    // }
   }
 }
 
@@ -554,10 +557,12 @@ a.reversefootnote {
    ========================================================================== */
 
 .gsc-control-cse {
+
   table,
   tr,
   td {
-    border: 0; /* remove table borders widget */
+    border: 0;
+    /* remove table borders widget */
   }
 }
 
@@ -586,6 +591,7 @@ a.reversefootnote {
 
 // full screen video fixes
 :-webkit-full-screen-ancestor {
+
   .masthead,
   .page__footer {
     position: static;

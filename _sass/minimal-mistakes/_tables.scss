@@ -3,37 +3,25 @@
    ========================================================================== */
 
 table {
-  display: block;
-  margin-bottom: 1em;
-  width: 100%;
+  // display: block;
   font-family: $global-font-family;
-  font-size: $type-size-6;
   border-collapse: collapse;
   overflow-x: auto;
-
-  & + table {
-    margin-top: 1em;
-  }
+  margin: 1rem auto 0;
 }
 
-thead {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
+tr {
+  width: 100;
 }
 
 th {
-  padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  background-color: #f8f8f8;
 }
 
+th,
 td {
+  text-align: center;
   padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
-}
-
-tr,
-td,
-th {
-  vertical-align: middle;
+  border: 1px solid #e6e6e6;
 }

@@ -38,7 +38,7 @@
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
-  + .list__item .archive__item-title {
+  +.list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
@@ -59,7 +59,7 @@
     bottom: 0;
   }
 
-  a + a {
+  a+a {
     opacity: 0.5;
   }
 }
@@ -74,9 +74,8 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
 
-  & + p {
+  &+p {
     text-indent: 0;
   }
 
@@ -168,8 +167,10 @@
   }
 
   @include breakpoint($medium) {
-    margin-left: 0; /* override margin*/
-    margin-right: 0; /* override margin*/
+    margin-left: 0;
+    /* override margin*/
+    margin-right: 0;
+    /* override margin*/
     width: span(3 of 12);
 
     &:nth-child(2n + 1) {
@@ -220,6 +221,7 @@
     @include breakpoint($medium) {
       display: block;
       font-size: $type-size-6;
+      // color: $card-content-h2-color;
     }
   }
 
@@ -442,7 +444,7 @@
    Wide Pages
    ========================================================================== */
 
-  .wide {
+.wide {
   .archive {
     @include breakpoint($large) {
       padding-right: 0;
@@ -457,7 +459,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
