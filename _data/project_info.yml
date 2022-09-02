@@ -5,13 +5,13 @@ face_anti_spoof:
   links:
     - label: "Demo"
       icon: "fab fa-youtube"
-      url: "https://github.com/wenhua-chen/"
+      url: "https://www.bilibili.com/video/BV1aa4y1f7Up"
     - label: "Project"
       icon: "far fa-file"
-      url: "https://github.com/wenhua-chen/"
-    - label: "Code(Python/C++/Java)"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/wenhua-chen/"
+      url: "/projects/活体检测"
+    - label: "Python / C++ / Java"
+      uselabel: true
+      color: 'blue'
   keywords:
     - label: "专利"
       color: "red"
@@ -28,13 +28,13 @@ tracking_recognizing:
   links:
     - label: "Demo"
       icon: "fab fa-youtube"
-      url: "https://github.com/wenhua-chen/"
+      url: "https://www.bilibili.com/video/BV1Za411d7tu"
     - label: "Project"
       icon: "far fa-file"
-      url: "https://github.com/wenhua-chen/"
-    - label: "Code(Python/FFmpeg)"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/wenhua-chen/"
+      url: "/projects/行人追踪和行为识别"
+    - label: "Python / FFmpeg"
+      uselabel: true
+      color: 'blue'
   keywords:
     - label: "专利"
       color: "red"
@@ -51,13 +51,13 @@ AI_assisted_diagnose:
   links:
     - label: "Demo"
       icon: "fab fa-youtube"
-      url: "https://github.com/wenhua-chen/"
+      url: "/assets/images/AI_assisted_diagnose/软件展示.png"
     - label: "Project"
       icon: "far fa-file"
-      url: "https://github.com/wenhua-chen/"
+      url: "/projects/AI辅助诊断"
     - label: "Code(Python)"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/wenhua-chen/"
+      url: "https://www.github.com/wenhua-chen/AI_Assisted_Diagnose/"
   keywords:
     - label: "目标检测"
       color: "green"

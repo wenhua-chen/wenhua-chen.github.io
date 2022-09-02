@@ -1,16 +1,15 @@
 <script type="text/javascript">
   function show_content(content_id) {
     button = document.getElementById(content_id);
-    content = document.getElementById(content_id + '_content');
+    content = document.getElementById(content_id + 'content');
     if (content.style.display == "block") {
       content.style.display = "none";
       button.innerHTML = button.innerHTML.replace('△', '▽');
-      return false
     } else {
       content.style.display = "block";
       button.innerHTML = button.innerHTML.replace('▽', '△');
-      return true
     }
+    return true
   }
 </script>
 
@@ -33,8 +32,8 @@
       <ul>
         {% for child in nav.children %}
         <li>
-          {% capture content_id %}{{ child.title }}{% endcapture %}
-          <a id="{{ child.title }}" onclick="return show_content('{{ content_id }}')"
+          {% capture content_id %}{{ child.title | append: '_' }}{% endcapture %}
+          <a id="{{ child.title | append: '_' }}" onclick="return show_content('{{ content_id }}')"
             href="{{ child.url | relative_url }}" {% if child.url==page.url %} class="active" {% endif %}>{{
             child.title }}</a>
 

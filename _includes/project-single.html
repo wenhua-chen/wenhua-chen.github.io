@@ -12,13 +12,13 @@
 
 <article class="project-content">
   <div class="project-image">
-    <a href="{{ post.url | relative_url }}">
+    <a href="{{ post.url | relative_url }}" target="_blank">
       <img src="{{ teaser | relative_url }}" alt="" />
     </a>
   </div>
 
   <div class="card-content">
-    <h2><a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a></h2>
+    <h2><a href="{{ post.url | relative_url }}" rel="permalink" target="_blank">{{ title }}</a></h2>
     <p class="archive__item-excerpt" itemprop="description">{{ post.intro }}</p>
 
     {% if post.info %}
@@ -30,9 +30,14 @@
     </section>
     <section class="project-links">
       {% for link in info.links %}
-      <a href="{{ link.url }}" rel="nofollow noopener noreferrer me" {% if link.url contains 'http' %} itemprop="sameAs"
-        {% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="links">{{
+      {% if link.uselabel %}
+      <span class="label label-{{ link.color }}">{{ link.label }}</span>
+      {% else %}
+      <a href="{{ link.url }}" target="_blank" rel="nofollow noopener noreferrer me" {% if link.url contains 'http' %}
+        itemprop="sameAs" {% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span
+          class="links">{{
           link.label }}</span></a>
+      {% endif %}
       {% endfor %}
     </section>
     {% endif %}

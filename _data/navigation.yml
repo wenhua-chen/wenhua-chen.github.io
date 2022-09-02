@@ -5,14 +5,6 @@ main:
     url: /#projects
   - title: "简历"
     url: /简历
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
 
 # ========================================================================
 
@@ -48,7 +40,7 @@ face_anti_spoof_ZH:
   - title: 遇到的挑战 - 服务器端
     url: /projects/活体检测#遇到的挑战---服务器端
     children:
-      - title: "🔥 怎么确定静默活体解决方案的 ▽"
+      - title: "怎么确定静默活体解决方案的 ▽"
         url: /projects/活体检测#怎么确定静默活体解决方案的
         children:
           - title: "• 技术调研"
@@ -66,24 +58,56 @@ face_anti_spoof_ZH:
             url: /projects/活体检测#引入第三方通道
           - title: "• 最终结果"
             url: /projects/活体检测#最终结果
-      - title: "怎么提高服务的稳定性"
+      - title: "🔥 怎么提高服务的稳定性 ▽"
         url: /projects/活体检测#怎么提高服务的稳定性
+        children:
+          - title: "• 模块替换"
+            url: /projects/活体检测#模块替换
+          - title: "• 负载均衡与容灾系统"
+            url: /projects/活体检测#负载均衡与容灾系统
+          - title: "• 监控"
+            url: /projects/活体检测#监控
       - title: "怎么提高服务的并发能力"
         url: /projects/活体检测#怎么提高服务的并发能力
   
   - title: 遇到的挑战 - 移动端
     url: /projects/活体检测#遇到的挑战---移动端
     children:
-      - title: "怎么确定动作活体解决方案的"
+      - title: "怎么确定动作活体解决方案的 ▽"
         url: /projects/活体检测#怎么确定动作活体解决方案的
-      - title: "算法上有哪些创新"
+        children:
+          - title: "• 分类模型"
+            url: /projects/活体检测#分类模型
+          - title: "• 从2D映射到3D"
+            url: /projects/活体检测#从2D映射到3D
+          - title: "• 关键点相对位置"
+            url: /projects/活体检测#关键点相对位置
+      - title: "🔥 算法上有哪些创新 ▽"
         url: /projects/活体检测#算法上有哪些创新
+        children:
+          - title: "• 多步骤合并"
+            url: /projects/活体检测#多步骤合并
+          - title: "• 减少不必要的计算"
+            url: /projects/活体检测#减少不必要的计算
+          - title: "• 排除个体差异"
+            url: /projects/活体检测#排除个体差异
+          - title: "• 针对性的改进"
+            url: /projects/活体检测#针对性的改进
       - title: "移动端的调用逻辑是怎样的"
         url: /projects/活体检测#移动端的调用逻辑是怎样的
       - title: "为什么调用逻辑要这样设计"
         url: /projects/活体检测#为什么调用逻辑要这样设计
-      - title: "工程上做了哪些优化"
+      - title: "🔥 工程上做了哪些优化 ▽"
         url: /projects/活体检测#工程上做了哪些优化
+        children:
+          - title: "• 内存管理"
+            url: /projects/活体检测#内存管理
+          - title: "• 大小优化"
+            url: /projects/活体检测#大小优化
+          - title: "• 速度优化"
+            url: /projects/活体检测#速度优化
+          - title: "• 体验优化"
+            url: /projects/活体检测#体验优化
   
   - title: 备注
     url: /projects/活体检测#备注
@@ -120,19 +144,40 @@ tracking_recognizing_ZH:
   - title: 遇到的挑战 - 算法开发
     url: /projects/行人追踪和行为识别#遇到的挑战---算法开发
     children:
-      - title: "如何做追踪"
+      - title: "🔥 如何做追踪 ▽"
         url: /projects/行人追踪和行为识别#如何做追踪
-      - title: "如何提升追踪的准确率和效率"
+        children:
+          - title: "• 基于外观特征相似度"
+            url: /projects/行人追踪和行为识别#基于外观特征相似度
+          - title: "• 基于运动特征相似度"
+            url: /projects/行人追踪和行为识别#基于运动特征相似度
+      - title: "🔥 如何提升追踪的准确率和效率 ▽"
         url: /projects/行人追踪和行为识别#如何提升追踪的准确率和效率
+        children:
+          - title: "• 运动和外观特征一起匹配"
+            url: /projects/行人追踪和行为识别#运动和外观特征一起匹配
+          - title: "• 先运动后外观特征匹配"
+            url: /projects/行人追踪和行为识别#先运动后外观特征匹配
+          - title: "• 逐层匹配机制"
+            url: /projects/行人追踪和行为识别#逐层匹配机制
+          - title: "• 外观校验"
+            url: /projects/行人追踪和行为识别#外观校验
       - title: "哪些行为需要识别"
         url: /projects/行人追踪和行为识别#哪些行为需要识别
-      - title: "如何做行为识别"
+      - title: "🔥 如何做行为识别 ▽"
         url: /projects/行人追踪和行为识别#如何做行为识别
+        children:
+          - title: "• 人体关键点+规则"
+            url: /projects/行人追踪和行为识别#人体关键点+规则
+          - title: "• 通过独立帧做分类"
+            url: /projects/行人追踪和行为识别#通过独立帧做分类
+          - title: "• 通过连续帧做分类"
+            url: /projects/行人追踪和行为识别#通过连续帧做分类
   
   - title: 遇到的挑战 - 算法部署
     url: /projects/行人追踪和行为识别#遇到的挑战---算法部署
     children:
-      - title: "如何做到实时处理"
+      - title: "🔥 如何做到实时处理"
         url: /projects/行人追踪和行为识别#如何做到实时处理
       - title: "输入线程中不同视角的画面不同步怎么办"
         url: /projects/行人追踪和行为识别#输入线程中不同视角的画面不同步怎么办
@@ -166,20 +211,61 @@ AI_assisted_diagnose_ZH:
   - title: 遇到的挑战 - 数据准备
     url: /projects/AI辅助诊断#遇到的挑战---数据准备
     children:
-      - title: "训练数据是怎么准备的"
+      - title: "🔥 训练数据是怎么准备的 ▽"
         url: /projects/AI辅助诊断#训练数据是怎么准备的
-      - title: "数据是怎么做预处理的"
+        children:
+          - title: "• 公开数据集的问题"
+            url: /projects/AI辅助诊断#公开数据集的问题
+          - title: "• 自制数据集"
+            url: /projects/AI辅助诊断#自制数据集
+          - title: "• 数据标注"
+            url: /projects/AI辅助诊断#数据标注
+          - title: "• 成本控制"
+            url: /projects/AI辅助诊断#成本控制
+      - title: "🔥 数据是怎么做预处理的 ▽"
         url: /projects/AI辅助诊断#数据是怎么做预处理的
+        children:
+          - title: "• 区域裁剪"
+            url: /projects/AI辅助诊断#区域裁剪
+          - title: "• 数据增强"
+            url: /projects/AI辅助诊断#数据增强
   
   - title: 遇到的挑战 - 算法开发
     url: /projects/AI辅助诊断#遇到的挑战---算法开发
     children:
-      - title: "脊柱侧弯是如何判断的"
+      - title: "🔥 脊柱侧弯是如何判断的 ▽"
         url: /projects/AI辅助诊断#脊柱侧弯是如何判断的
+        children:
+          - title: "• cobb角及其定义"
+            url: /projects/AI辅助诊断#cobb角及其定义
+          - title: "• 处理流程"
+            url: /projects/AI辅助诊断#处理流程
+          - title: "• 训练MaskRCNN"
+            url: /projects/AI辅助诊断#训练MaskRCNN
+          - title: "• 后处理"
+            url: /projects/AI辅助诊断#后处理
+          - title: "• 结果评估"
+            url: /projects/AI辅助诊断#结果评估
+          - title: "• 结果展示"
+            url: /projects/AI辅助诊断#结果展示
       - title: "肺结节是如何判断的"
         url: /projects/AI辅助诊断#肺结节是如何判断的
-      - title: "肺结节判定时FasterRCNN本身会对推荐区域做二分类, 为什么还要单独训练分类模型"
+      - title: "🔥 肺结节判定时FasterRCNN本身会对推荐区域做二分类, 为什么还要单独训练分类模型 ▽"
         url: /projects/AI辅助诊断#肺结节判定时fasterrcnn本身会对推荐区域做二分类-为什么还要单独训练分类模型
+        children:
+          - title: "• 问题"
+            url: /projects/AI辅助诊断#问题
+          - title: "• 猜想"
+            url: /projects/AI辅助诊断#猜想
+          - title: "• 分析"
+            url: /projects/AI辅助诊断#分析
+          - title: "• 证据"
+            url: /projects/AI辅助诊断#证据
+          - title: "• 解决方案"
+            url: /projects/AI辅助诊断#解决方案
+          - title: "• 结果评估"
+            url: /projects/AI辅助诊断#结果评估_
+          
   
   - title: 备注
     url: /projects/AI辅助诊断#备注

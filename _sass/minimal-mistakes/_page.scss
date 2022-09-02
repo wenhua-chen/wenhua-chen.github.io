@@ -74,7 +74,7 @@ body {
 }
 
 .page .news-item {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 
 .page__title {
@@ -99,6 +99,10 @@ body {
 
 .page__content {
   font-size: 0.8rem;
+
+  li>img {
+    margin: 1rem auto;
+  }
 
   h2 {
     padding-bottom: 0.5em;

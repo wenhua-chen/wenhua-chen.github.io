@@ -77,7 +77,7 @@ sidebar:
 ### 遇到的挑战 - 数据准备
 
 #### 训练数据是怎么准备的?
-  - 调研了公开数据集: [ChestX-ray14(2017)](https://arxiv.org/pdf/1705.02315.pdf)、[CheXpert(2019)](https://arxiv.org/pdf/1901.07031.pdf)、[MIMIC-CXR(2019)](https://arxiv.org/pdf/1901.07042.pdf)等
+  - <span id="公开数据集的问题">调研了公开数据集: [ChestX-ray14(2017)](https://arxiv.org/pdf/1705.02315.pdf)、[CheXpert(2019)](https://arxiv.org/pdf/1901.07031.pdf)、[MIMIC-CXR(2019)](https://arxiv.org/pdf/1901.07042.pdf)等</span>
     - 公开数据集的一些问题: 疾病种类不全、标注方法不一致、标注质量不高、国内外医学界对病灶定义差异等
     - 对公开数据集的准确性还有很多的质疑, 如[质疑一](https://zhuanlan.zhihu.com/p/37384516)、[质疑二](https://lukeoakdenrayner.wordpress.com/2017/12/18/the-chestxray14-dataset-problems/)、[质疑三](https://twitter.com/erictopol/status/930980060835614720)等
 
@@ -92,28 +92,28 @@ sidebar:
     </tr>
   </table>
 
-  - 为了符合国内标准, 统一病种和标注方法 , 决定自制数据集
+  - <span id="自制数据集">为了符合国内标准, 统一病种和标注方法 , 决定自制数据集</span>
     - 与上海交通大学附属瑞金医院(三甲)合作, 数据库共有18万张原始X射线照片及对应病例报告, 院内脱敏及清洗后获得有效性数据共15.3万条
     - 由瑞金医院放射科主任医师主导标注, 并对标注结果负责, 我们负责标注系统建立和数据准备, 得到精标数据3.4万张
     - 建立瑞金医院DR数据集(不开源)
-  - 数据标注
+  - <span id="数据标注">数据标注</span>
     - 开发标注系统
     - 需要对器官区域做分割, 同时对病灶类别和位置打标签
     - 采用矩形框和多边形标注两种形式
     <img src="/assets/images/AI_assisted_diagnose/标注系统.png" alt="标注系统" style="zoom:40%;" />{:.align-center}
-  - 成本控制
+  - <span id="成本控制">成本控制</span>
     - 专业数据集制作的成本很高, 尤其是医生标注费用, 平均40RMB/张
     - 建立初级医生标注, 高级医生审核的二级机制, 可以降低成本, 同时确保结果的准确性
     - 先统一标注, 再按需求标注: 有的模型需要少量数据即可达到要求, 效果不好的模型有针对性地补充数据
     <img src="/assets/images/AI_assisted_diagnose/image-20220803120731568.png" alt="image-20220803120731568" style="zoom:40%;" />{:.align-center}
 
 #### 数据是怎么做预处理的?
-  - 区域裁剪
+  - <span id="区域裁剪">区域裁剪</span>
     - 不同病种的出现区域不一样, 如肺结节只会出现在双肺位置, 将肺部区域裁剪下来单独检测, 优点如下
     - 可以在图像压缩后保留更多有效信息, 提高召回率
     - 可以去除无关信息, 降低假阳率
     <img src="/assets/images/AI_assisted_diagnose/图片裁剪的优势.png" alt="图片裁剪的优势" style="zoom:40%;" />{:.align-center}
-  - 数据增强
+  - <span id="数据增强">数据增强</span>
     - 随机缩放、随机擦除、水平翻转等常用数据增强方法
     - CLAHE特征加强
       - CLAHE (Contrast Limited Adaptive Histogram Equalization), 对比度有限的自适应直方图均衡算法, 通过基于分块的思想来提出直方图均衡算法, 广泛用于数据加强
@@ -125,7 +125,7 @@ sidebar:
 ### 遇到的挑战 - 算法开发
 
 #### 脊柱侧弯是如何判断的?
-  - cobb角及其定义
+  - <span id="cobb角及其定义">cobb角及其定义</span>
     - 首先找到造成最大夹角的两个椎体, 然后延长上椎体的上缘线和下椎体的下缘线, 最后两条延长线的垂直线夹角即为cobb角(等于两条延长线的夹角)
     - cobb角度是脊柱侧弯的重要判断依据,通常cobb角大于10度会被定义为脊柱侧弯
 
@@ -142,7 +142,7 @@ sidebar:
     </tr>
   </table>
 
-  - 处理流程
+  - <span id="处理流程">处理流程</span>
     - 原图 --> CLAHE数据增强 --> MaskRCNN实例分割 --> 外缘点转换 --> 后处理
   
   <table>
@@ -158,19 +158,19 @@ sidebar:
     </tr>
   </table>
 
-  - 训练MaskRCNN实例分割模型
+  - <span id="训练MaskRCNN">训练MaskRCNN实例分割模型</span>
     - MaskRCNN是基于二阶段的实例分割框架, 通过RPN层网络筛选出前景和背景,其中前景指的是图片中有价值的目标,再对筛选出来的前景信息进行分类、定位和分割任务
     - 卷积方式替换为可变形卷积
     - 骨干网络采用先进的HRNet
     - CascadeRCNN的方式做输出
     <img src="/assets/images/AI_assisted_diagnose/MaskRCNN-9519528.png" alt="MaskRCNN" style="zoom:70%;margin:2em auto;" />{:.align-center}
-  - 后处理
+  - <span id="后处理">后处理</span>
     - 椎体间夹角为上椎体的上缘线和下椎体的下缘线之间的角度
     - 计算每个椎体与其他所有椎体的夹角, 最大的角即为cobb角
-  - 结果评估
+  - <span id="结果评估">结果评估</span>
     - 1000张测试图片找到脊柱侧弯97个, 医生保留97个, 新增0个, 召回率100%, 假阳率0%
     - 选取了248张图片, 由两位医生进行手工标注, 医生之间的平均绝对误差在2.2度，算法和医生之间的平均绝对误差在3.32度
-  - 结果展示
+  - <span id="结果展示">结果展示</span>
     <img src="/assets/images/AI_assisted_diagnose/脊柱侧弯结果展示.png" alt="脊柱侧弯结果展示" style="zoom:50%;" />{:.align-center}
 
 #### 肺结节是如何判断的?
@@ -195,22 +195,22 @@ sidebar:
   </table>
 
 #### 肺结节判定时FasterRCNN本身会对推荐区域做二分类, 为什么还要单独训练分类模型?
-  - 问题
+  - <span id="问题">问题</span>
     - 实验中发现, 在保证高召回率(98%)时, FasterRCNN的假阳率非常高(>60%), 尝试优化网络结构或者补充数据, 假阳率只有轻微下降
-  - 猜想
+  - <span id="猜想">猜想</span>
     - 卷积过程中的信息丢失: 特征提取网络本身的局限性导致的
     - 周边信息及与周边的关联性信息丢失: FasterRCNN的分类器只能对RPN限定的推荐区域做分类
-  - 分析
+  - <span id="分析">分析</span>
     - 普通物体的目标检测时, 本身具有明显特征, 不容易与其他物体混淆, 并且作为独立物体与周边区域关联性不强, 这导致卷积过程的部分信息丢失和周边关联性信息丢失对结果影响不大
     - 肺结节的判定过程与普通物体不同, 卷积时的部分信息丢失和周边关联性信息丢失会导致它与其他相似结构差异过小无法区分, 这导致假阳率始终无法降低
-  - 证据
+  - <span id="证据">证据</span>
     - 咨询医生判断肺结节的过程, 除了观察可疑区域的外观特征, 还会观察目标的纹理、周围血管的分布密度和走向等特征, 甚至会结合患者的过往病例、生活作息等信息综合判断
-  - 解决方案
+  - <span id="解决方案">解决方案</span>
     - 自定义分类网络, 接受多尺寸多维度的输入, 作为FasterRCNN的补充
     - 模拟医生阅片方法, 提取可疑区域的几何、纹理、上下文等信息输入模型
     - FasterRCNN作为“初级筛选”, 分类模型专注于降低假阳率
     <img src="/assets/images/AI_assisted_diagnose/肺结节分类模型.png" alt="肺结节分类模型" style="zoom:48%;" />{:.align-center}
-  - 结果评估
+  - <span id="结果评估_">结果评估</span>
     - 1000张测试图片找到肺结节疑似病灶162个, 医生保留117个, 新增4个
     - 召回率97%, 假阳率28%, 假阳率大幅下降
 
