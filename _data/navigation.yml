@@ -1,14 +1,20 @@
 
 # ========================================================================
 main:
-  - title: "项目"
-    url: /#projects
   - title: "简历"
-    url: /简历
+    url: /cv
+  - title: "项目"
+    url: /index_zh#projects
+
+main_en:
+  - title: "CV"
+    url: /cv_en
+  - title: "Projects"
+    url: /#projects
 
 # ========================================================================
 
-face_anti_spoof_ZH:
+face_anti_spoof:
   - title: 背景和目的
     url: /projects/活体检测#背景和目的
     children:
@@ -16,7 +22,6 @@ face_anti_spoof_ZH:
         url: /projects/活体检测#什么是活体检测
       - title: "为什么需要自研活体检测"
         url: /projects/活体检测#为什么需要自研活体检测
-
   - title: 成果
     url: /projects/活体检测#成果
     children:
@@ -24,7 +29,6 @@ face_anti_spoof_ZH:
         url: /projects/活体检测#产品落地了吗-效果怎么样
       - title: "产品有哪些奖项和成果"
         url: /projects/活体检测#产品有哪些奖项和成果
-  
   - title: 处理思路
     url: /projects/活体检测#处理思路
     children:
@@ -36,7 +40,6 @@ face_anti_spoof_ZH:
         url: /projects/活体检测#为什么静默活体要在后台的服务器上完成-不能放到移动端
       - title: "为什么要分成三步, 不能一步完成"
         url: /projects/活体检测#为什么要分成三步-不能一步完成
-  
   - title: 遇到的挑战 - 服务器端
     url: /projects/活体检测#遇到的挑战---服务器端
     children:
@@ -69,7 +72,6 @@ face_anti_spoof_ZH:
             url: /projects/活体检测#监控
       - title: "怎么提高服务的并发能力"
         url: /projects/活体检测#怎么提高服务的并发能力
-  
   - title: 遇到的挑战 - 移动端
     url: /projects/活体检测#遇到的挑战---移动端
     children:
@@ -108,13 +110,134 @@ face_anti_spoof_ZH:
             url: /projects/活体检测#速度优化
           - title: "• 体验优化"
             url: /projects/活体检测#体验优化
-  
   - title: 备注
     url: /projects/活体检测#备注
+    children:
+      - title: "ColorTexture"
+        url: /projects/活体检测#colortexture
+      - title: "FaceBagNet"
+        url: /projects/活体检测#facebagnet
+      - title: "CDCN"
+        url: /projects/活体检测#cdcn
+      - title: "SGTD"
+        url: /projects/活体检测#sgtd
+      - title: "MiniFASNet"
+        url: /projects/活体检测#minifasnet
+
+face_anti_spoof_en:
+  - title: Background and Purpose
+    url: /projects/face-live-detection#background-and-purpose
+    children:
+      - title: "What is Face Live Detection"
+        url: /projects/face-live-detection#what-is-face-live-detection
+      - title: "Why do we need a self-developed Face Live Detection service"
+        url: /projects/face-live-detection#why-do-we-need-a-self-developed-face-live-detection-service
+  - title: Achievements
+    url: /projects/face-live-detection#achievements
+    children:
+      - title: "Has the product been launched successfully"
+        url: /projects/face-live-detection#has-the-product-been-launched-successfully
+      - title: "What awards/achievements has it received"
+        url: /projects/face-live-detection#what-awardsachievements-has-it-received
+  - title: Overview of The Process
+    url: /projects/face-live-detection#overview-of-the-process
+    children:
+      - title: "What is the process of Face Live Detection"
+        url: /projects/face-live-detection#what-is-the-process-of-face-live-detection
+      - title: "What do Face quality, Action live, and Silent live detection mean"
+        url: /projects/face-live-detection#what-do-face-quality-action-live-and-silent-live-detection-mean
+      - title: "Why is silent live detection conducted on the server side"
+        url: /projects/face-live-detection#why-is-silent-live-detection-conducted-on-the-server-side
+      - title: "Why are there three steps, not one"
+        url: /projects/face-live-detection#why-are-there-three-steps-not-one
+  - title: Challenges - Server Side
+    url: /projects/face-live-detection#challenges---server-side
+    children:
+      - title: "How was the Action LiveDetect solution determined ▽"
+        url: /projects/face-live-detection#how-was-the-action-livedetect-solution-determined
+        children:
+          - title: "• Technology research"
+            url: /projects/face-live-detection#technology-research
+          - title: "• Experiments"
+            url: /projects/face-live-detection#experiments
+      - title: "🔥 How to make the result better ▽"
+        url: /projects/face-live-detection#how-to-make-the-result-better
+        children:
+          - title: "• Optimize from data"
+            url: /projects/face-live-detection#optimize-from-data
+          - title: "• Voting mechanism"
+            url: /projects/face-live-detection#voting-mechanism
+          - title: "• Introduction of third-party channels"
+            url: /projects/face-live-detection#introduction-of-third-party-channels
+          - title: "• Final result"
+            url: /projects/face-live-detection#final-result
+      - title: "🔥 How to improve service stability ▽"
+        url: /projects/face-live-detection#how-to-improve-service-stability
+        children:
+          - title: "• Module replacement"
+            url: /projects/face-live-detection#module-replacement
+          - title: "• Load balancing and disaster recovery system"
+            url: /projects/face-live-detection#load-balancing-and-disaster-recovery-system
+          - title: "• Monitoring"
+            url: /projects/face-live-detection#monitoring
+      - title: "How to increase the concurrency of the service"
+        url: /projects/face-live-detection#how-to-increase-the-concurrency-of-the-service
+  - title: Challenges - Mobile SidePermalink
+    url: /projects/face-live-detection#challenges---mobile-side
+    children:
+      - title: "How was the Action Live Detection solution determined ▽"
+        url: /projects/face-live-detection#how-was-the-action-live-detection-solution-determined
+        children:
+          - title: "• Classify actions with classification model"
+            url: /projects/face-live-detection#classification-model
+          - title: "• Mapping from 2D to 3D"
+            url: /projects/face-live-detection#mapping-from-2d-to-3d
+          - title: "• Relative position of key points"
+            url: /projects/face-live-detection#the-relative-position-of-key-points
+      - title: "🔥 Any innovations in the algorithm ▽"
+        url: /projects/face-live-detection#any-innovations-in-the-algorithm
+        children:
+          - title: "• Multi-step merging"
+            url: /projects/face-live-detection#multi-step-merging
+          - title: "• Reduce unnecessary calculations"
+            url: /projects/face-live-detection#reduce-unnecessary-calculations
+          - title: "• Exclusion of individual differences"
+            url: /projects/face-live-detection#exclusion-of-individual-differences
+          - title: "• Targeted improvements"
+            url: /projects/face-live-detection#targeted-improvements
+      - title: "What is the structure of the mobile side"
+        url: /projects/face-live-detection#what-is-the-structure-of-the-mobile-side
+      - title: "Why is the mobile side structure designed this way"
+        url: /projects/face-live-detection#why-is-the-mobile-side-structure-designed-this-way
+      - title: "🔥 What engineering optimizations have been made ▽"
+        url: /projects/face-live-detection#what-engineering-optimizations-have-been-made
+        children:
+          - title: "• Memory management"
+            url: /projects/face-live-detection#memory-management
+          - title: "• File size optimization"
+            url: /projects/face-live-detection#file-size-optimization
+          - title: "• Speed optimization"
+            url: /projects/face-live-detection#speed-optimization
+          - title: "• Interaction optimization"
+            url: /projects/face-live-detection#interaction-optimization
+  - title: Notes
+    url: /projects/face-live-detection#notes
+    children:
+      - title: "ColorTexture"
+        url: /projects/face-live-detection#colortexture
+      - title: "FaceBagNet"
+        url: /projects/face-live-detection#facebagnet
+      - title: "CDCN"
+        url: /projects/face-live-detection#cdcn
+      - title: "SGTD"
+        url: /projects/face-live-detection#sgtd
+      - title: "MiniFASNet"
+        url: /projects/face-live-detection#minifasnet
+      
 
 # ========================================================================
 
-tracking_recognizing_ZH:
+tracking_recognizing:
   - title: 背景和目的
     url: /projects/行人追踪和行为识别#背景和目的
     children:
@@ -124,7 +247,6 @@ tracking_recognizing_ZH:
         url: /projects/行人追踪和行为识别#为什么需要多视角
       - title: "为什么要做行人追踪和行为识别"
         url: /projects/行人追踪和行为识别#为什么要做行人追踪和行为识别
-
   - title: 成果
     url: /projects/行人追踪和行为识别#成果
     children:
@@ -132,7 +254,6 @@ tracking_recognizing_ZH:
         url: /projects/行人追踪和行为识别#产品落地了吗-效果怎么样
       - title: "产品有哪些奖项和成果"
         url: /projects/行人追踪和行为识别#产品有哪些奖项和成果
-  
   - title: 处理思路
     url: /projects/行人追踪和行为识别#处理思路
     children:
@@ -140,7 +261,6 @@ tracking_recognizing_ZH:
         url: /projects/行人追踪和行为识别#处理流程是怎样的
       - title: "后台怎么做追踪和识别"
         url: /projects/行人追踪和行为识别#后台怎么做追踪和识别
-  
   - title: 遇到的挑战 - 算法开发
     url: /projects/行人追踪和行为识别#遇到的挑战---算法开发
     children:
@@ -173,7 +293,6 @@ tracking_recognizing_ZH:
             url: /projects/行人追踪和行为识别#通过独立帧做分类
           - title: "• 通过连续帧做分类"
             url: /projects/行人追踪和行为识别#通过连续帧做分类
-  
   - title: 遇到的挑战 - 算法部署
     url: /projects/行人追踪和行为识别#遇到的挑战---算法部署
     children:
@@ -183,13 +302,80 @@ tracking_recognizing_ZH:
         url: /projects/行人追踪和行为识别#输入线程中不同视角的画面不同步怎么办
       - title: "输出时如何实时传输视频流"
         url: /projects/行人追踪和行为识别#输出时如何实时传输视频流
-  
   - title: 备注
     url: /projects/行人追踪和行为识别#备注
 
+tracking_recognizing_en:
+  - title: Background and Purpose
+    url: /projects/pedestrian-tracking-behavior-recognition#background-and-purpose
+    children:
+      - title: "What is pedestrian tracking and behavior recognition"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-is-pedestrian-tracking-and-behavior-recognition
+      - title: "Why do we need multiple views"
+        url: /projects/pedestrian-tracking-behavior-recognition#why-do-we-need-multiple-views
+      - title: "What can pedestrian tracking and behavior recognition do"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-can-pedestrian-tracking-and-behavior-recognition-do
+  - title: Achievements
+    url: /projects/pedestrian-tracking-behavior-recognition#achievements
+    children:
+      - title: "Has the product been launched, and how is it working"
+        url: /projects/pedestrian-tracking-behavior-recognition#has-the-product-been-launched-and-how-is-it-working
+      - title: "What awards/achievements has it received"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-awardsachievements-has-it-received
+  - title: Overview of The Process
+    url: /projects/pedestrian-tracking-behavior-recognition#overview-of-the-process
+    children:
+      - title: "What is the structure of the whole process"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-is-the-structure-of-the-whole-process
+      - title: "How does the Backend Server carry out tracking and identification"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-does-the-backend-server-carry-out-tracking-and-identification
+  - title: Challenges - Algorithm Development
+    url: /projects/pedestrian-tracking-behavior-recognition#challenges---algorithm-development
+    children:
+      - title: "🔥 How to do pedestrian tracking ▽"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-to-do-pedestrian-tracking
+        children:
+          - title: "• Based on appearance feature similarity"
+            url: /projects/pedestrian-tracking-behavior-recognition#based-on-appearance-feature-similarity
+          - title: "• Based on motion feature similarity"
+            url: /projects/pedestrian-tracking-behavior-recognition#based-on-motion-feature-similarity
+      - title: "🔥 How to improve the accuracy and efficiency of tracking ▽"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-to-improve-the-accuracy-and-efficiency-of-tracking
+        children:
+          - title: "• Matching based on motion & appearance features similarity"
+            url: /projects/pedestrian-tracking-behavior-recognition#match-motion-and-appearance-features-together
+          - title: "• Motion match first, then appearance match"
+            url: /projects/pedestrian-tracking-behavior-recognition#motion-match-first-then-appearance-match
+          - title: "• Layer-by-Layer Matching Mechanism"
+            url: /projects/pedestrian-tracking-behavior-recognition#layer-by-layer-matching-mechanism
+          - title: "• Appearance check"
+            url: /projects/pedestrian-tracking-behavior-recognition#appearance-check
+      - title: "What behaviors need to be identified"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-behaviors-need-to-be-identified
+      - title: "🔥 How to do behavior recognition ▽"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-to-do-behavior-recognition
+        children:
+          - title: "• Human body key points + rules"
+            url: /projects/pedestrian-tracking-behavior-recognition#human-body-key-points-+-rules
+          - title: "• Classification by individual frames"
+            url: /projects/pedestrian-tracking-behavior-recognition#classification-by-individual-frames
+          - title: "• Classification by continuous frames"
+            url: /projects/pedestrian-tracking-behavior-recognition#classification-by-continuous-frames
+  - title: Challenges - Algorithm Deployment
+    url: /projects/pedestrian-tracking-behavior-recognition#challenges---algorithm-deployment
+    children:
+      - title: "🔥 How to achieve real-time processing"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-to-achieve-real-time-processing
+      - title: "What if the input streams of different views are not synchronized"
+        url: /projects/pedestrian-tracking-behavior-recognition#what-if-the-input-streams-of-different-views-are-not-synchronized
+      - title: "How is the output video stream transmitted in real-time"
+        url: /projects/pedestrian-tracking-behavior-recognition#how-is-the-output-video-stream-transmitted-in-real-time
+  - title: Notes
+    url: /projects/pedestrian-tracking-behavior-recognition#notes
+
 # ========================================================================
 
-AI_assisted_diagnose_ZH:
+AI_assisted_diagnose:
   - title: 背景和目的
     url: /projects/AI辅助诊断#背景和目的
     children:
@@ -197,7 +383,6 @@ AI_assisted_diagnose_ZH:
         url: /projects/AI辅助诊断#什么是ai辅助医疗诊断
       - title: "为什么需要AI辅助诊断"
         url: /projects/AI辅助诊断#为什么需要ai辅助诊断
-
   - title: 处理流程和结果
     url: /projects/AI辅助诊断#处理流程和结果
     children:
@@ -207,7 +392,6 @@ AI_assisted_diagnose_ZH:
         url: /projects/AI辅助诊断#测试结果
       - title: "处理流程是怎样的"
         url: /projects/AI辅助诊断#处理流程是怎样的
-  
   - title: 遇到的挑战 - 数据准备
     url: /projects/AI辅助诊断#遇到的挑战---数据准备
     children:
@@ -229,7 +413,6 @@ AI_assisted_diagnose_ZH:
             url: /projects/AI辅助诊断#区域裁剪
           - title: "• 数据增强"
             url: /projects/AI辅助诊断#数据增强
-  
   - title: 遇到的挑战 - 算法开发
     url: /projects/AI辅助诊断#遇到的挑战---算法开发
     children:
@@ -265,8 +448,6 @@ AI_assisted_diagnose_ZH:
             url: /projects/AI辅助诊断#解决方案
           - title: "• 结果评估"
             url: /projects/AI辅助诊断#结果评估_
-          
-  
   - title: 备注
     url: /projects/AI辅助诊断#备注
     children:
@@ -278,5 +459,90 @@ AI_assisted_diagnose_ZH:
         url: /projects/AI辅助诊断#mobilenet
       - title: "CascadeRCNN"
         url: /projects/AI辅助诊断#cascadercnn
+
+AI_assisted_diagnose_en:
+  - title: Background and Purpose
+    url: /projects/ai-assisted-diagnose#background-and-purpose
+    children:
+      - title: "What is AI-assisted medical diagnosis"
+        url: /projects/ai-assisted-diagnose#what-is-ai-assisted-medical-diagnosis
+      - title: "Why do we need AI-assisted diagnosis"
+        url: /projects/ai-assisted-diagnose#why-do-we-need-ai-assisted-diagnosis
+  - title: Overview of The Process
+    url: /projects/ai-assisted-diagnose#overview-of-the-process
+    children:
+      - title: "Demo"
+        url: /projects/ai-assisted-diagnose#demo
+      - title: "Test Results"
+        url: /projects/ai-assisted-diagnose#test-results
+      - title: "What is the structure of the whole process"
+        url: /projects/ai-assisted-diagnose#what-is-the-structure-of-the-whole-process
+  - title: Challenges - Data Preparation
+    url: /projects/ai-assisted-diagnose#challenges---data-preparation
+    children:
+      - title: "🔥 How does the training data been prepared ▽"
+        url: /projects/ai-assisted-diagnose#how-does-the-training-data-been-prepared
+        children:
+          - title: "• Problems with public datasets"
+            url: /projects/ai-assisted-diagnose#problems-with-public-datasets
+          - title: "• Self-made dataset"
+            url: /projects/ai-assisted-diagnose#self-made-dataset
+          - title: "• Data Annotation"
+            url: /projects/ai-assisted-diagnose#data-annotation
+          - title: "• Cost Control"
+            url: /projects/ai-assisted-diagnose#cost-control
+      - title: "🔥 How is the data pre-processed ▽"
+        url: /projects/ai-assisted-diagnose#how-is-the-data-pre-processed
+        children:
+          - title: "• Cropping"
+            url: /projects/ai-assisted-diagnose#cropping
+          - title: "• Data Enhancement"
+            url: /projects/ai-assisted-diagnose#data-enhancement
+  - title: Challenges - Algorithm Development
+    url: /projects/ai-assisted-diagnose#challenges---algorithm-development
+    children:
+      - title: "🔥 How is scoliosis determined ▽"
+        url: /projects/ai-assisted-diagnose#how-is-scoliosis-determined
+        children:
+          - title: "• Cobb angle and its definition"
+            url: /projects/ai-assisted-diagnose#cobb-angle-and-its-definition
+          - title: "• Processing Flow"
+            url: /projects/ai-assisted-diagnose#processing-flow
+          - title: "• Train MaskRCNN"
+            url: /projects/ai-assisted-diagnose#train-maskrcnn
+          - title: "• Post-processing"
+            url: /projects/ai-assisted-diagnose#post-processing
+          - title: "• Evaluation of results"
+            url: /projects/ai-assisted-diagnose#evaluation-of-results
+          - title: "• Results Show"
+            url: /projects/ai-assisted-diagnose#results-show
+      - title: "How is the pulmonary nodule determined"
+        url: /projects/ai-assisted-diagnose#how-is-the-pulmonary-nodule-determined
+      - title: "🔥 Why do we need to train a separate classification model ▽"
+        url: /projects/ai-assisted-diagnose#why-do-we-need-to-train-a-separate-classification-model
+        children:
+          - title: "• Question"
+            url: /projects/ai-assisted-diagnose#question
+          - title: "• Conjecture"
+            url: /projects/ai-assisted-diagnose#conjecture
+          - title: "• Analysis"
+            url: /projects/ai-assisted-diagnose#analysis
+          - title: "• Evidence"
+            url: /projects/ai-assisted-diagnose#evidence
+          - title: "• Solutions"
+            url: /projects/ai-assisted-diagnose#solutions
+          - title: "• Evaluation of results"
+            url: /projects/ai-assisted-diagnose#evaluation-of-results_
+  - title: Notes
+    url: /projects/ai-assisted-diagnose#notes
+    children:
+      - title: "Deformable Convolutional Networks"
+        url: /projects/ai-assisted-diagnose#deformable-convolutional-networks
+      - title: "HRNet"
+        url: /projects/ai-assisted-diagnose#hrnet
+      - title: "MobileNet"
+        url: /projects/ai-assisted-diagnose#mobilenet
+      - title: "CascadeRCNN"
+        url: /projects/ai-assisted-diagnose#cascadercnn
 
 # ========================================================================

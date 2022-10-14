@@ -1,6 +1,19 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
-<div class="masthead">
+{% if page.other_lang_link %}
+{% assign other_lang_link = page.other_lang_link %}
+{% else %}
+{% assign other_lang_link = page.permalink %}
+{% endif %}
+
+<script type="text/javascript">
+  function switch_language(other_lang_link) {
+    document.getElementById("switch_language").href = other_lang_link;
+    return true
+  }
+</script>
+
+<div class="masthead sticky">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
@@ -12,11 +25,23 @@
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
         <ul class="visible-links">
+          <li class="masthead__menu-item">
+            <a id="switch_language" href="/" onclick="return switch_language('{{ other_lang_link }}')">中/EN</a>
+          </li>
+          {% if page.language == "zh" %}
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          {% endif %}
+          {% if page.language == "en" %}
+          {%- for link in site.data.navigation.main_en -%}
+            <li class="masthead__menu-item">
+              <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
+          {% endif %}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">

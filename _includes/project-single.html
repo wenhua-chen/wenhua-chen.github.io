@@ -10,6 +10,12 @@
 {% assign title = post.title %}
 {% endif %}
 
+{% if page.language == "en" %}
+{% assign language = "-en" %}
+{% else %}
+{% assign language = "" %}
+{% endif %}
+
 <article class="project-content">
   <div class="project-image">
     <a href="{{ post.url | relative_url }}" target="_blank">
@@ -17,7 +23,7 @@
     </a>
   </div>
 
-  <div class="card-content">
+  <div class="card-content{{ language }}">
     <h2><a href="{{ post.url | relative_url }}" rel="permalink" target="_blank">{{ title }}</a></h2>
     <p class="archive__item-excerpt" itemprop="description">{{ post.intro }}</p>
 

@@ -1,16 +1,24 @@
 /* ==========================================================================
    MASTHEAD
    ========================================================================== */
+.masthead.sticky {
+  clear: both;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0em;
+  float: right;
+}
 
 .masthead {
   position: relative;
-  // border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  padding: 0.5em 0;
+  background-color: white;
+  // padding: 0.5em 0;
 
   &__inner-wrap {
     @include clearfix;
@@ -86,6 +94,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 0.9rem;
 
   &--lg {
     padding-right: 2em;

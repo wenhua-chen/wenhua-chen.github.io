@@ -22,6 +22,27 @@ face_anti_spoof:
     - label: "人脸反欺诈"
       color: "green"
 
+face_anti_spoof_en:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "https://www.bilibili.com/video/BV1aa4y1f7Up"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "/projects/face-live-detection"
+    - label: "Python / C++ / Java"
+      uselabel: true
+      color: 'blue'
+  keywords:
+    - label: "Patent"
+      color: "red"
+    - label: "Best Project"
+      color: "yellow"
+    - label: "Face Action Recognition"
+      color: "green"
+    - label: "Face Anti Spoof"
+      color: "green"
+
 # ========================================================================
 
 tracking_recognizing:
@@ -45,6 +66,27 @@ tracking_recognizing:
     - label: "行为识别"
       color: "green"
 
+tracking_recognizing_en:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "https://www.bilibili.com/video/BV1Za411d7tu"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "/projects/pedestrian-tracking-behavior-recognition"
+    - label: "Python / FFmpeg"
+      uselabel: true
+      color: 'blue'
+  keywords:
+    - label: "Patent"
+      color: "red"
+    - label: "Best Project"
+      color: "yellow"
+    - label: "Object Tracking"
+      color: "green"
+    - label: "Behavior Recognition"
+      color: "green"
+
 # ========================================================================
   
 AI_assisted_diagnose:
@@ -62,4 +104,21 @@ AI_assisted_diagnose:
     - label: "目标检测"
       color: "green"
     - label: "实例分割"
+      color: "green"
+
+AI_assisted_diagnose_en:
+  links:
+    - label: "Demo"
+      icon: "fab fa-youtube"
+      url: "/assets/images/AI_assisted_diagnose/软件展示.png"
+    - label: "Project"
+      icon: "far fa-file"
+      url: "/projects/ai-assisted-diagnose"
+    - label: "Code(Python)"
+      icon: "fab fa-fw fa-github"
+      url: "https://www.github.com/wenhua-chen/AI_Assisted_Diagnose/"
+  keywords:
+    - label: "Object Detection"
+      color: "green"
+    - label: "Instance Segmentation"
       color: "green"

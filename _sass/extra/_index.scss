@@ -12,9 +12,27 @@
 }
 
 .news-item {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
     margin: 0.5em 0;
+    
+    .label {
+        display: inline-block;
+        height: fit-content;
+    }
+
+    a {
+        color: #5a9ccb;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
 }
 
-#projects {
-    margin-top: 2em;
+.recent-news-more {
+    font-size: 0.7rem;
+}
+
+#showmore {
+    border-width: 2px;
+    border-radius: 4px;
 }

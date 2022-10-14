@@ -104,10 +104,10 @@ analytics:
 
 
 # Site Author
-author:
+author_en:
   name             : "Wenhua Chen"
-  avatar           : "/assets/images/head_portrait.jpeg"
-  bio              : "Senior Algorithm Engineer at Yeahka Co.,Ltd."
+  avatar           : "/assets/images/head_portrait_me.JPG"
+  bio              : "Senior Algorithm Engineer at Yeahka"
   location         : "Shenzhen, China"
   links:
     - label: "CV"
@@ -122,6 +122,25 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:wenhuachen.cn@gmail.com"
+
+author:
+  name             : "陈文华"
+  avatar           : "/assets/images/head_portrait_me.JPG"
+  bio              : "移卡科技高级算法工程师"
+  location         : "深圳, 中国"
+  links:
+    - label: "简历"
+      icon: "far fa-id-card"
+      url: "https://github.com/wenhua-chen/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/wenhua-chen/"
+    - label: "领英"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://github.com/wenhua-chen/"
+    - label: "发邮件"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:wenhuachen.cv@foxmail.com"
 
 
 # Site Footer
@@ -204,6 +223,13 @@ collections:
       - 活体检测.md
       - 行人追踪和行为识别.md
       - AI辅助诊断.md
+  projects_en:
+    output: true
+    permalink: /:collection/:path/
+    order:
+      - 活体检测_en.md
+      - 行人追踪和行为识别_en.md
+      - AI辅助诊断_en.md
 
 # Sass/SCSS
 sass:
