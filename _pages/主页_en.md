@@ -101,7 +101,7 @@ More ▽</button>
   </div>
 </div>
 
-<h3><div class="section-title">Projects</div></h3>
+<h3><div id="projects" class="section-title">Projects</div></h3>
 
 <h4 style="margin:0 0 1em;padding:0;"><div class="section-subtitle">2022</div></h4>
 
