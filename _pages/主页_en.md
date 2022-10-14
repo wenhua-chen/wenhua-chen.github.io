@@ -12,7 +12,7 @@ excerpt: "I'm a senior algorithm engineer at Yeahka<br>
 · In the process of work, I also gradually learned some project architecture, front/back end development content, and mastered some skills to communicate with the business side<br>
 · Check my projects for more details"
 header:
-  overlay_image: "/assets/images/home_page_headimg.jpeg"
+  overlay_image: "/assets/images/2018-06-24 171224.JPG"
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
