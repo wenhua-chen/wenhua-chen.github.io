@@ -148,10 +148,6 @@ body {
       -o-transition: opacity 0.2s ease-in-out 0.1s;
       transition: opacity 0.2s ease-in-out 0.1s;
     }
-
-    &:hover .header-link {
-      opacity: 0;
-    }
   }
 
   /* paragraph indents */

@@ -33,7 +33,7 @@ function do_change(){
 }
 </script>
 
-<h3 id="recent-news"><div class="section-title">Recent News</div></h3>
+<h3 id="recent-news" class="section-title">Recent News</h3>
 
 <!-- <div class="news-item">
   <span class="label label-green">11 / 2022</span> <span>[Honor] Awarded company‘s Semi-Annual Best Project - Image and Copy Recommendation and AI-assisted Video Editing</span>
@@ -100,7 +100,7 @@ More ▽</button>
   </div>
 </div>
 
-<h3 id="projects"><div class="section-title">Projects</div></h3>
+<h3 id="projects" class="section-title">Projects</h3>
 
 <h4 style="margin:0 0 1em;padding:0;"><div class="section-subtitle">2022</div></h4>
 
