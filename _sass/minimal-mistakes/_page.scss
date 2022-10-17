@@ -110,8 +110,8 @@ body {
   }
 
   h3 {
-    padding-top: 4em;
-    margin-top: -2em;
+    padding-top: 2em;
+    margin-top: 0em;
     // margin-top: 0;
     font-size: 1.2em;
   }
@@ -150,7 +150,7 @@ body {
     }
 
     &:hover .header-link {
-      opacity: 1;
+      opacity: 0;
     }
   }
 

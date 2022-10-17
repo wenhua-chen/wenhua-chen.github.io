@@ -9,8 +9,7 @@ title: "Wenhua Chen"
 excerpt: "I'm a senior algorithm engineer at Yeahka<br>
 · My research interest lies in computer vision, including text/image/video understanding and processing<br>
 · My project experience involves text recognition/recommendation, image classification/enhancement/object detection, video object tracking/action recognition/short video production, etc<br>
-· In the process of work, I also gradually learned some project architecture, front/back end development content, and mastered some skills to communicate with the business side<br>
-· Check my projects for more details"
+"
 header:
   overlay_image: "/assets/images/2018-06-24 171224.JPG"
   overlay_filter: rgba(0, 0, 0, 0.5)
@@ -34,7 +33,7 @@ function do_change(){
 }
 </script>
 
-<h3><div id="recent-news" class="section-title">Recent News</div></h3>
+<h3 id="recent-news"><div class="section-title">Recent News</div></h3>
 
 <!-- <div class="news-item">
   <span class="label label-green">11 / 2022</span> <span>[Honor] Awarded company‘s Semi-Annual Best Project - Image and Copy Recommendation and AI-assisted Video Editing</span>
@@ -43,10 +42,10 @@ function do_change(){
   <span class="label label-green">09 / 2022</span> <span>[Patent] Get a patent for AI-assisted Video Editing</span>
 </div>
 <div class="news-item">
-  <span class="label label-green">08 / 2022</span> <span>The project is applied on the business side, project introduction and demo will be released soon - Image and Copy Recommendation System</span>
+  <span class="label label-green">08 / 2022</span> <span>New project launched, introduction and demo coming soon - Image and Copy Recommendation System</span>
 </div>
 <div class="news-item">
-  <span class="label label-green">05 / 2022</span> <span>The project is applied on the business side, project introduction and demo will be released soon - AI-assisted Video Editing</span>
+  <span class="label label-green">05 / 2022</span> <span>New project launched, introduction and demo coming soon - AI-assisted Video Editing</span>
 </div>
 <div class="news-item">
   <span class="label label-green">02 / 2022</span> <span>The project <a href="/projects/face-live-detection" target="_blank">introduction</a> and <a href="https://www.bilibili.com/video/BV1aa4y1f7Up" target="_blank">demo</a> is released - Face Live Detection</span>
@@ -101,7 +100,7 @@ More ▽</button>
   </div>
 </div>
 
-<h3><div id="projects" class="section-title">Projects</div></h3>
+<h3 id="projects"><div class="section-title">Projects</div></h3>
 
 <h4 style="margin:0 0 1em;padding:0;"><div class="section-subtitle">2022</div></h4>
 
