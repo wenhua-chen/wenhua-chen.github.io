@@ -61,7 +61,6 @@ sidebar:
   - Patent: "Multi-view Multi-object Tracking and Behavior Recognition Technology Based on Artificial Intelligence"
     - First author
     - Patent Publication No: CN113297960A
-    - [Inquiry link](http://epub.cnipa.gov.cn/)
 
 ------
 

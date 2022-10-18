@@ -69,7 +69,6 @@ sidebar:
   - Patent: "False Face Detection Method, Terminal Device and Computer Readable Storage Media
       - First author
       - Patent publication number: CN113297960A
-      - [link](http://epub.cnipa.gov.cn/)
 
 ------
 ### Overview of The Process
