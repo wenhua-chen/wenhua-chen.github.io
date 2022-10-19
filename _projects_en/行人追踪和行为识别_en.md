@@ -60,7 +60,7 @@ sidebar:
   - Company's Best Project of the Month
   - Patent: "Multi-view Multi-object Tracking and Behavior Recognition Technology Based on Artificial Intelligence"
     - First author
-    - Patent Publication No: CN113297960A
+    - Patent number: 202210321459.6
 
 ------
 

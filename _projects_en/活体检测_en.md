@@ -68,7 +68,7 @@ sidebar:
   - Company's Best Project of the Month
   - Patent: "False Face Detection Method, Terminal Device and Computer Readable Storage Media
       - First author
-      - Patent publication number: CN113297960A
+      - Patent number: 202110563614.0
 
 ------
 ### Overview of The Process
