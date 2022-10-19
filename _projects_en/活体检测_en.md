@@ -7,7 +7,7 @@ language: en
 classes: wide
 title: "Face Live Detection"
 year: 2022
-intro: "A service to determine whether a face in an image is a real person or not"
+intro: "Determine whether the face in the image is a real person, and block fake face attacks such as masks/screens"
 info: "face_anti_spoof_en"
 english: true
 excerpt: "
