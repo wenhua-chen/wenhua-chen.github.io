@@ -2,13 +2,15 @@
 # ========================================================================
 main:
   - title: "简历"
-    url: /cv
+    url: /assets/files/陈文华_简历.pdf
+    new_page: true
   - title: "项目"
     url: /index_zh#projects
 
 main_en:
   - title: "CV"
-    url: /cv_en
+    url: /assets/files/WenhuaChen_CV.pdf
+    new_page: true
   - title: "Projects"
     url: /#projects
 
