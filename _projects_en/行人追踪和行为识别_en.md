@@ -19,7 +19,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
-    - label: "Learn more"
+    - label: "Details"
       url: "/projects/pedestrian-tracking-behavior-recognition#background-and-purpose"
 sidebar:
   nav: "tracking_recognizing_en"

@@ -20,7 +20,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
-    - label: "Learn more"
+    - label: "Details"
       url: "/projects/face-live-detection#background-and-purpose"
 sidebar:
   nav: "face_anti_spoof_en"

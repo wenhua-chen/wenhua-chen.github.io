@@ -21,7 +21,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
-    - label: "Learn more"
+    - label: "Details"
       url: "/projects/ai-assisted-diagnose#background-and-purpose"
 sidebar:
   nav: "AI_assisted_diagnose_en"

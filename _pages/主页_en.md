@@ -15,7 +15,7 @@ header:
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
-    - label: "Learn more"
+    - label: "More about me"
       url: "/#recent-news"
 ---
 
