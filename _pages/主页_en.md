@@ -36,13 +36,13 @@ function do_change(){
 <h3 id="recent-news" class="section-title">Recent News</h3>
 
 <!-- <div class="news-item">
-  <span class="label label-green">11 / 2022</span> <span>[Honor] Awarded company‘s Semi-Annual Best Project - Image and Copy Recommendation and AI-assisted Video Editing</span>
+  <span class="label label-green">11 / 2022</span> <span>[Honor] Awarded company‘s Semi-Annual Best Project - Image and Text Recommendation and AI-assisted Video Editing</span>
 </div> -->
 <div class="news-item">
   <span class="label label-green">09 / 2022</span> <span>[Patent] Get a patent for AI-assisted Video Editing</span>
 </div>
 <div class="news-item">
-  <span class="label label-green">08 / 2022</span> <span>New project launched, introduction and demo coming soon - Image and Copy Recommendation System</span>
+  <span class="label label-green">08 / 2022</span> <span>New project launched, introduction and demo coming soon - Image and Text Recommendation System</span>
 </div>
 <div class="news-item">
   <span class="label label-green">05 / 2022</span> <span>New project launched, introduction and demo coming soon - AI-assisted Video Editing</span>
