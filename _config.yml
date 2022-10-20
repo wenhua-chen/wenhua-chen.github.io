@@ -110,9 +110,9 @@ author_en:
   bio              : "Senior Algorithm Engineer at Yeahka"
   location         : "Shenzhen, China"
   links:
-    - label: "CV"
+    - label: "Resume"
       icon: "far fa-id-card"
-      url: "https://github.com/wenhua-chen/"
+      url: "/assets/files/WenhuaChen_resume.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wenhua-chen/"
@@ -131,7 +131,7 @@ author:
   links:
     - label: "简历"
       icon: "far fa-id-card"
-      url: "https://github.com/wenhua-chen/"
+      url: "/assets/files/陈文华_简历.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/wenhua-chen/"

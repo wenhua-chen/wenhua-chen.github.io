@@ -8,8 +8,8 @@ main:
     url: /index_zh#projects
 
 main_en:
-  - title: "CV"
-    url: /assets/files/WenhuaChen_CV.pdf
+  - title: "Resume"
+    url: /assets/files/WenhuaChen_resume.pdf
     new_page: true
   - title: "Projects"
     url: /#projects
