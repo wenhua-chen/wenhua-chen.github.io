@@ -5,14 +5,14 @@ main:
     url: /assets/files/陈文华_简历.pdf
     new_page: true
   - title: "项目"
-    url: /zh#projects
+    url: /#projects
 
 main_en:
   - title: "Resume"
     url: /assets/files/WenhuaChen_resume.pdf
     new_page: true
   - title: "Projects"
-    url: /#projects
+    url: /en#projects
 
 # ========================================================================
 
