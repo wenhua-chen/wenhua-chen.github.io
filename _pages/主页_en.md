@@ -1,6 +1,6 @@
 ---
 permalink: /
-other_lang_link: /index_zh
+other_lang_link: /zh
 layout: single
 author_profile: true
 language: en

@@ -5,7 +5,7 @@ main:
     url: /assets/files/陈文华_简历.pdf
     new_page: true
   - title: "项目"
-    url: /index_zh#projects
+    url: /zh#projects
 
 main_en:
   - title: "Resume"
