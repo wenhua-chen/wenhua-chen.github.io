@@ -1,6 +1,6 @@
 ---
-permalink: /en
-other_lang_link: /
+permalink: /
+other_lang_link: /zh
 layout: single
 author_profile: true
 language: en
@@ -16,7 +16,7 @@ header:
   caption: "Pic by Wenhua Chen"
   actions:
     - label: "More about me"
-      url: "/en#recent-news"
+      url: "/#recent-news"
 ---
 
 <script type="text/javascript">
