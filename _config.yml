@@ -107,8 +107,8 @@ analytics:
 author_en:
   name             : "Wenhua Chen"
   avatar           : "/assets/images/head_portrait_me.JPG"
-  bio              : "Senior Algorithm Engineer at Yeahka"
-  location         : "Shenzhen, China"
+  bio              : "Senior Algorithm Engineer"
+  location         : "Adelaide, Australia"
   links:
     - label: "Resume"
       icon: "far fa-id-card"
@@ -126,8 +126,8 @@ author_en:
 author:
   name             : "陈文华"
   avatar           : "/assets/images/head_portrait_me.JPG"
-  bio              : "移卡科技高级算法工程师"
-  location         : "深圳, 中国"
+  bio              : "高级算法工程师"
+  location         : "阿德莱德, 澳大利亚"
   links:
     - label: "简历"
       icon: "far fa-id-card"
