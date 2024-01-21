@@ -58,9 +58,9 @@ sidebar:
 
 #### What awards/achievements has it received?
   - Company's Best Project of the Month
-  - Patent: "Multi-view Multi-object Tracking and Behavior Recognition Technology Based on Artificial Intelligence"
+  - Patent: "Behavior Recognition Method, Device, Terminal Device, and Storage Medium"
     - First author
-    - Patent number: 202210321459.6
+    - Patent number: CN202210321459.6
 
 ------
 

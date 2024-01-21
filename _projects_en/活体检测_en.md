@@ -66,9 +66,9 @@ sidebar:
 
 #### What awards/achievements has it received?
   - Company's Best Project of the Month
-  - Patent: "False Face Detection Method, Terminal Device and Computer Readable Storage Media
+  - Patent: "Facial Anti-fraud Method, Terminal Device, and Computer-readable Storage Medium"
       - First author
-      - Patent number: 202110563614.0
+      - Patent number: CN202110563614.0
 
 ------
 ### Overview of The Process
