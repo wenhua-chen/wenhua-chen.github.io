@@ -11,7 +11,7 @@ excerpt: "I'm a senior algorithm engineer at Yeahka<br>
 · My project experience involves text recognition/recommendation, image classification/enhancement/object detection, video object tracking/action recognition/short video production, etc<br>
 "
 header:
-  overlay_image: "/assets/images/2018-06-24 171224.JPG"
+  overlay_image: "/assets/images/2017-11-10 113831.JPG"
   overlay_filter: rgba(0, 0, 0, 0.5)
   caption: "Pic by Wenhua Chen"
   actions:
