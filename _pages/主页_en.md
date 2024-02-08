@@ -13,7 +13,7 @@ excerpt: "I'm a senior algorithm engineer at Yeahka<br>
 header:
   overlay_image: "/assets/images/2017-11-10 113831.JPG"
   overlay_filter: rgba(0, 0, 0, 0.5)
-  caption: "Pic by Wenhua Chen"
+  caption: "Photo by Wenhua Chen"
   actions:
     - label: "More about me"
       url: "/#recent-news"

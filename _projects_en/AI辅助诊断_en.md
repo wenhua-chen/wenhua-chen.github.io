@@ -19,7 +19,7 @@ header:
   teaser: /assets/images/AI_assisted_diagnose_headimg.jpg
   overlay_image: /assets/images/AI_assisted_diagnose_headimg.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  caption: "Pic by Wenhua Chen"
+  caption: "Photo by Wenhua Chen"
   actions:
     - label: "Details"
       url: "/projects/ai-assisted-diagnose#background-and-purpose"

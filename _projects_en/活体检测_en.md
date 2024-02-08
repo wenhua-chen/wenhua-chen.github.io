@@ -18,7 +18,7 @@ header:
   teaser: /assets/images/face_anti_spoof_headimg.jpg
   overlay_image: /assets/images/face_anti_spoof_headimg.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
-  caption: "Pic by Wenhua Chen"
+  caption: "Photo by Wenhua Chen"
   actions:
     - label: "Details"
       url: "/projects/face-live-detection#background-and-purpose"

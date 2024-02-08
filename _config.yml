@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "主页"
+title                    : "Main"
 img_path                 : 
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -108,7 +108,7 @@ author_en:
   name             : "Wenhua Chen"
   avatar           : "/assets/images/head_portrait_me.JPG"
   bio              : "Senior Machine Learning Engineer"
-  location         : "Adelaide, Australia"
+  location         : "Sydney, Australia"
   links:
     - label: "Resume"
       icon: "far fa-id-card"
@@ -127,7 +127,7 @@ author:
   name             : "陈文华"
   avatar           : "/assets/images/head_portrait_me.JPG"
   bio              : "高级算法工程师"
-  location         : "阿德莱德, 澳大利亚"
+  location         : "悉尼, 澳大利亚"
   links:
     - label: "简历"
       icon: "far fa-id-card"
